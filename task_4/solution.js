@@ -13,13 +13,13 @@ function parseProducts(json) {
     // Верните как результат функции свойство products объекта data
 }
 
-function renderProductsCards (json) {
+function renderProductsCards(json) {
     clearProducts();
     let products;
     products = parseProducts(json);
-    length = products.length;
+    let length = products.length;
     for (let i = 0; i < length; i++){
-        addProducts(products[i]);
+        addProduct(products[i]);
     }
 
 }
